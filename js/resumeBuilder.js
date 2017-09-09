@@ -12,7 +12,7 @@ var bio = {
 
 	"welcomeMessage" : "Welcome, this is Maisoon. I believe in all the possibilities and always looking to give all the best out of me. Helping others is another way of happily living.", 
 	"skills": ["Programming", "HTML", "CSS", "Front-end Development", "Matlab", "Horse Riding", "Volunteering", "Photography"],
-	"bioPic": "images/maisoon.png" 
+	"biopic": "images/maisoon.png" 
 };
 
 //display function
@@ -35,7 +35,7 @@ bio.display = function (){
 
 	$('#topContacts, #footerContacts').append(updatedMobile + updatedEmail +
       updatedGithub + updatedTwitter + updatedLocation);
-	var updatedPic = HTMLbioPic.replace("%data%", bio.bioPic);
+	var updatedPic = HTMLbioPic.replace("%data%", bio.biopic);
 	$("#header").append(updatedPic); 
 	var updatedWelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 	$("#header").append(updatedWelcome);
